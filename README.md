@@ -18,19 +18,19 @@
 # each package will be subject to its respective license terms.
 # =====================================================================
 -->
-# Midships Digital Transaction Signing Auth Trees
-
-![ScreenShot](./images/midships.png)
+#  Digital Transaction Signing Auth Trees
 
 A set of authentication trees for ForgeRock's Identity Platform 7.0.0 and ForgeRock Identity Cloud which configures digital transaction signing for AM.
+* **Website**: www.midships.io <br />
+* **Email**: support@midships.io / sales@midships.io 
 
 ## Usage 
 
 To deploy these trees in Identity Cloud, download the .json tree files from the releases tab on github 
 [here](https://github.com/ForgeRock/). Next, import the .json files individually from  __Journeys -> Import__.
 
-If you'd like to import the trees programatically in an on-premise or Identity Cloud deployment, you can use amtreetool to do so, following the instructions from here
-[AM-treetool](https://github.com/jonknightfr/AM-treetool) or use the newest version, [Frodo](https://github.com/rockcarver/frodo).
+If you'd like to import the trees programatically in an on-premise or Identity Cloud deployment you can follow the instructions mentioned below for each journey using the
+[AM-treetool](https://github.com/jonknightfr/AM-treetool) or the newest version, [Frodo](https://github.com/rockcarver/frodo). 
 
 ### Midships passwordless registration tree
 This tree is used to enroll your device to your profile and store the public key information along with the device metadata that will later be used for passwordless login and doing digital transactions. As part of the device enrollment process, user will be prompted to introduce his password before the device gets enrolled in his profile. At the end of the device enrollment process, the tree will also generate a symmetric key secret (ktp) that can be used for the Midships caller verification trees.
@@ -87,22 +87,15 @@ To deploy this flow via the [AM-treetool](https://github.com/jonknightfr/AM-tree
 
 [forgerock_platform]: https://www.forgerock.com/platform/ 
 
+## Support
 
-## License
+For any additional support please contact Midships using the following channels:<br />
+
+* **Website**: www.midships.io <br />
+* **Email**: support@midships.io / sales@midships.io 
+
+
+## 
 
 *Midships Limited
-Copyright (c) 2023
-This file contains scripts/code owned by Midships Limited*
-
-**NOTE: Don't check this file into source control with any sensitive hard coded value.**
-
-*Legal Notice: Installation and use of this script is subject to
-a license agreement with Midships Limited (a company registered
-in England, under company registration number: 11324587).
-This script cannot be modified or shared with another organisation
-unless approved in writing by Midships Limited.
-You as a user of this script must review, accept and comply with the
-license terms of each downloaded/installed package that is referenced
-by this script. By proceeding with the installation, you are accepting
-the license terms of each package, and acknowledging that your use of
-each package will be subject to its respective license terms.*
+Copyright (c) 2023*
