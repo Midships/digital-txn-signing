@@ -20,7 +20,7 @@
 -->
 #  Digital Transaction Signing Auth Trees
 
-A set of authentication trees for ForgeRock's Identity Platform 7.0.0 and ForgeRock Identity Cloud which configures digital transaction signing for AM.
+A set of authentication trees for ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud which configures digital transaction signing for AM.
 * **Website**: www.midships.io <br />
 * **Email**: support@midships.io / sales@midships.io 
 
