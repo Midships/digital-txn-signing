@@ -21,9 +21,7 @@
 
 #  Digital Transaction Signing Authentication Trees
 
-A set of authentication trees for ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud which configures digital transaction signing for AM.
-
-These authentication trees enable native Digital Transaction Signing on ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud.  Please contact us at sales@midships.io for further details of our solution.
+A set of authentication trees that enable native Digital Transaction Signing on ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud.  Please contact us at sales@midships.io for further details of our solution.
 
 The Midships’ Digital transaction signing solution can be used by those customers looking to introduce non-repudiation across transactions e.g. payments, changes to sensitive details and/or to comply with regulatory standards such as MAS 14.2.3 and MAS 14.2.4 TRM-Guidelines-18-January-2021.pdf (mas.gov.sg):
 
