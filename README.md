@@ -18,16 +18,35 @@
 # each package will be subject to its respective license terms.
 # =====================================================================
 -->
-#  Digital Transaction Signing Auth Trees
+
+#  Digital Transaction Signing Authentication Trees
 
 A set of authentication trees for ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud which configures digital transaction signing for AM.
-* **Website**: www.midships.io <br />
+
+These authentication trees enable native Digital Transaction Signing on ForgeRock's Identity Platform 7.x and ForgeRock Identity Cloud.  Please contact us at sales@midships.io for further details of our solution.
+
+The Midships’ Digital transaction signing solution can be used by those customers looking to introduce non-repudiation across transactions e.g. payments, changes to sensitive details and/or to comply with regulatory standards such as MAS 14.2.3 and MAS 14.2.4 TRM-Guidelines-18-January-2021.pdf (mas.gov.sg):
+
+*14.2.3 The FI should implement transaction-signing (e.g. digital signatures) for authorising high-risk activities to protect the integrity of customer accounts’ data and transaction details. High-risk activities include changes to sensitive customer data (e.g. customer office and home address, email and telephone contact details), registration of third party payee details, high value funds transfers and revision of funds transfer limits.*
+
+*14.2.4 Besides login and transaction-signing for high-risk activities, the FI may implement appropriate risk-based or adaptive authentication that presents customers with authentication options that are commensurate with the risk level of the transaction and sensitivity of the data.*
+
+This solution does not use any third-party tooling or services and is self-contained within Access Manager (deployed via scripted authentication trees). It is compatible with both the self-managed ForgeRock stack and ForgeRock Identity Cloud.  It integrates with ForgeRock’s out-of-the-box passwordless solution and comes with a FIDO compliant passwordless solution for any customer not currently using the ForgeROck SDK.
+
+The solution uses the customer’s private key (held on the client) to sign the transaction details.  The signed transaction is forwarded to ForgeRock AM.  ForgeRock AM validates the signature (using the public key) and creates a one time token containing the key transaction details (customisable).  This one time token is returned to the client. 
+
+Midships also provides an offline version where the client does not have internet access. 
+
+Please contact us at sales@midships.io for further details of our solution and how it can be customised to meet your specific requirements.
+
+### Our contact details
+
+* **Website**: www.midships.io 
 * **Email**: support@midships.io / sales@midships.io 
 
 ## Usage 
 
-To deploy these trees in Identity Cloud, download the .json tree files from the releases tab on github 
-[here](https://github.com/ForgeRock/). Next, import the .json files individually from  __Journeys -> Import__.
+To deploy these trees in Identity Cloud, download the .json tree files provided by Midships. Next, import the .json files individually from  __Journeys -> Import__.
 
 If you'd like to import the trees programatically in an on-premise or Identity Cloud deployment you can follow the instructions mentioned below for each journey using the
 [AM-treetool](https://github.com/jonknightfr/AM-treetool) or the newest version, [Frodo](https://github.com/rockcarver/frodo). 
